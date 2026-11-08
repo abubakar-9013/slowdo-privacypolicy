@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SlowDo privacy policy</title>
+<meta name="description" content="How SlowDo handles your information: no account, no ads, no tracking.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --mist: #E7E5EF;
+    --sky: #EEF1F6;
+    --paper: #FBFAFD;
+    --ink: #262A31;
+    --ink-soft: rgba(38, 42, 49, 0.66);
+    --line: rgba(38, 42, 49, 0.10);
+    --moss: #5F7F6B;
+    --honey: #E3A963;
+    --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+    --rounded: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --mist: #1B2130;
+      --sky: #151B26;
+      --paper: #151B26;
+      --ink: #E6E8EC;
+      --ink-soft: rgba(230, 232, 236, 0.62);
+      --line: rgba(230, 232, 236, 0.10);
+      --moss: #8FAE99;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--ink);
+    background: linear-gradient(180deg, var(--mist) 0%, var(--sky) 38%, var(--paper) 100%) fixed;
+    font: 17px/1.6 var(--rounded);
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+
+  /* The horizon, with the one warm light rising on it. */
+  .horizon {
+    position: relative;
+    height: 56px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+  }
+  .sun {
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    width: 28px;
+    height: 28px;
+    margin-left: -14px;
+    border-radius: 50%;
+    background: var(--honey);
+    box-shadow: 0 0 40px 10px rgba(227, 169, 99, 0.35);
+    animation: rise 2.4s cubic-bezier(.22, .9, .3, 1) both;
+  }
+  @keyframes rise { from { transform: translateY(26px); opacity: 0; } to { transform: none; opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .sun { animation: none; } }
+
+  .wordmark {
+    margin: 0;
+    text-align: center;
+    font: italic 400 22px/1 var(--serif);
+    letter-spacing: 0.01em;
+    color: var(--ink-soft);
+  }
+  h1 {
+    margin: 10px 0 8px;
+    text-align: center;
+    font: 400 44px/1.1 var(--serif);
+    letter-spacing: -0.01em;
+  }
+  .updated {
+    margin: 0 0 48px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .lead {
+    margin: 0 0 40px;
+    text-align: center;
+    font: italic 400 21px/1.5 var(--serif);
+  }
+
+  section {
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+  }
+  h2 {
+    margin: 0 0 10px;
+    font: 400 22px/1.3 var(--serif);
+  }
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0; padding: 0; list-style: none; }
+  li { position: relative; padding-left: 22px; margin: 0 0 8px; }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 0.66em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--moss);
+  }
+  .quiet { color: var(--ink-soft); font-size: 15px; }
+  a { color: inherit; text-decoration-color: var(--honey); text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+  a:hover { color: var(--moss); }
+  footer {
+    margin-top: 56px;
+    text-align: center;
+    font: italic 400 17px/1.4 var(--serif);
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 480px) {
+    main { padding: 48px 16px 72px; }
+    h1 { font-size: 36px; }
+    .lead { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="horizon" aria-hidden="true"><div class="sun"></div></div>
+
+  <p class="wordmark">SlowDo</p>
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated 8 November 2026</p>
+
+  <p class="lead">SlowDo is a calm game. It doesn't need to know who you are, and it doesn't try to find out.</p>
+
+  <section>
+    <h2>The short version</h2>
+    <ul>
+      <li>No account, no sign-in.</li>
+      <li>No ads, no tracking, no analytics.</li>
+      <li>We don't collect, sell or share your personal information.</li>
+      <li>Your progress stays on your device.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What stays on your device</h2>
+    <p>To remember where you are, SlowDo keeps your progress (the levels you've passed, your calm minutes, your longest focus and the days you've played) and your settings (sound, music volume and haptics). This is stored on your device. We never receive it.</p>
+  </section>
+
+  <section>
+    <h2>Motion</h2>
+    <p>A few levels ask you to tilt or hold your phone still. While you play them, SlowDo reads the motion sensors on your device. These readings are used in the moment and are never stored or sent anywhere.</p>
+    <p>SlowDo doesn't use your camera, microphone, location, contacts or photos.</p>
+  </section>
+
+  <section>
+    <h2>Purchases</h2>
+    <p>Purchases are handled entirely by Apple through the App Store. We never see your payment details or your Apple Account. The app only learns which level packs you own, so it can unlock them.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>SlowDo is for all ages. Because it collects no personal information from anyone, it collects none from children either.</p>
+  </section>
+
+  <section>
+    <h2>Changes</h2>
+    <p>If any of this ever changes, for example if we add anonymous statistics to see which levels are too hard, we'll update this page and the date at the top before it happens.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about privacy? Write to <a href="mailto:abubakar9013@yahoo.com">abubakar9013@yahoo.com</a>.</p>
+  </section>
+
+  <footer>Take your time.</footer>
+</main>
+</body>
+</html>
